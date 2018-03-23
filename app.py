@@ -25,7 +25,7 @@ client = boto3.client('sagemaker-runtime')
 # specify an example to classify
 example = 30
 
-# convert an images vectors to csv
+# convert the image vector to csv
 payload = np2csv(train_set[0][example:example+1])
 
 # classify image using sagemaker endpoint
